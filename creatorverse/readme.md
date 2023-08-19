@@ -35,12 +35,12 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/mumtazf/creatorverse/blob/main/creatorverse/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+I had initially faced challenges with passing the data to the card component but I fixed it using useEffect() I also realized I should use params.data for the data i obtain through supabase and not just params.
 
 ## License
 

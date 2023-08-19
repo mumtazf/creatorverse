@@ -11,7 +11,7 @@ import Nav from './Components/Nav'
 
 import {supabase} from './client'
 
-function App() {
+const App = () => {
 
     const [creator, setCreator] = useState(null);
 
@@ -20,10 +20,9 @@ function App() {
         const {data} = await supabase.from('creators').select().order('created_at', {ascending: true})
         setCreator(data);
       }
-      console.log(creator)
 
       getData();
-    })
+    },[])
 
     let element = useRoutes([
       {

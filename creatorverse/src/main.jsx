@@ -6,7 +6,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import './index.css'
 
 //import different components
-import NotFound from "../routes/NotFound"
+import NotFound from "../src/routes/NotFound"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

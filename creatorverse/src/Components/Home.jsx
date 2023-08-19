@@ -9,7 +9,7 @@ const Home = () => {
                 <p>Enter into your world of favorite creators. Explore new artists or find your next role model.</p>
             </div>
             <div className="welcome_second">
-                <Link to = '/'><button>Edit</button></Link>
+                <Link to = '/new'><button>Add new</button></Link>
             </div>
         </div>
     )

@@ -8,6 +8,9 @@ import EditCreator from './Pages/EditCreator';
 import AddCreator from './Pages/AddCreator';
 import Home from './Components/Home';
 import Nav from './Components/Nav'
+
+import {supabase} from './client'
+
 function App() {
 
     const [creator, setCreator] = useState(null);
@@ -17,6 +20,7 @@ function App() {
         const {data} = await supabase.from('creators').select().order('created_at', {ascending: true})
         setCreator(data);
       }
+      console.log(creator)
 
       getData();
     })
@@ -41,8 +45,7 @@ function App() {
     ])
   return (
     <div className="App">
-      <Nav />
-      <Home />
+      {element}
     </div>
   )
 }

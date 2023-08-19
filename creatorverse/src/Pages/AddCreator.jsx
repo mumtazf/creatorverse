@@ -2,6 +2,9 @@
 //a form to input the values
 //how do i write a form?
 import {supabase} from '../client'
+import React from 'react';
+import {useState} from 'react';
+import './AddCreator.css'
 
 
 const AddCreator = () => {
@@ -28,16 +31,16 @@ const AddCreator = () => {
 return(
     <div className="addCreator">
         <form>
-            <label for= "name"></label>
+            <label for= "name">Name of the creator</label>
             <input type = "text" id = "creator_name" name = "creator_name" label = "Creator's name" onChange={handleChange}></input>
 
-            <label for= "description"></label>
+            <label for= "description">Describe them in a line or two</label>
             <input type = "text" id = "creator_description" name = "creator_description" label = "Creator's description" onChange={handleChange}></input>
 
-            <label for= "url"></label>
+            <label for= "url">Link to any of their social media accounts</label>
             <input type = "text" id = "creator_url" name = "creator_url" label = "Creator's URL" onChange={handleChange}></input>
 
-            <label for= "image"></label>
+            <label for= "image">Link to their image</label>
             <input type = "text" id = "creator_image" name = "creator_image" label = "Creator's image" onChange={handleChange}></input>
 
             <input type = "submit" value = "Create" onClick = {addCreator} />

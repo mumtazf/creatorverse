@@ -6,7 +6,8 @@ const ShowCreators = (props) => {
     const [creators, setCreators] = useState([]);
 
     useEffect(() => {
-        setCreators(props.data);
+        console.log(props)
+        setCreators(props);
     }, [props]);
     
     return (

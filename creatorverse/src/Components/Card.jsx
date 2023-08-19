@@ -13,7 +13,7 @@ const Card = (params) => {
     return(
         <div className = "creatorCard">
             <img src = {params.imageUrl} alt = "Image of the creator"/>
-            <h1>{params.name}</h1>
+            <h2>{params.name}</h2>
             <p>{params.description}</p>
             <Link to = {viewUrl}><button>Learn more!</button></Link>
         </div>

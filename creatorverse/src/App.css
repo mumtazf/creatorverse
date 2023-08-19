@@ -24,10 +24,10 @@ border-radius: 4px;
 padding: 20px;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 width: 20em;
-height: 100%;
+height: 80%;
 background-color: #ffffff;
 transition: box-shadow 0.3s ease;
-margin-bottom: 2em;
+margin-bottom: 10em;
 }
 
 .creatorCard img{
@@ -132,4 +132,8 @@ input{
   border-radius: 10px;
   cursor: pointer;
   margin-right: 2em;
+}
+
+.showCreators h1{
+  color: white;
 }

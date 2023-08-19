@@ -9,8 +9,8 @@ const Home = (creator) => {
         <div className="home">
             <div className="welcome">
                 <div className='welcome_text'>
-                    <h2>Welcome to CreatorVerse!</h2>
-                    <p>Enter into your world of favorite creators. Explore new artists or find your next role model.</p>
+                    <h2>ProductiVerse</h2>
+                    <p>Enter into your world of favorite productivity content creators. Explore new creators or find your next role model.</p>
                 </div>
             </div>
             <div className="welcome_second">

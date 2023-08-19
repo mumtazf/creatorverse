@@ -9,15 +9,18 @@ const ShowCreators = (props) => {
         console.log("creators")
         setCreators(props.data);
         console.log(creators)
-    },[props]);
+    },[props.data]);
     
     return (
-        <div className="ShowCreators">
+        <div className="showCreators">
+            <h1>Creator's Wall of Fame</h1>
             {
                 creators && creators.length > 0 ?
                 creators.map((creator, index) => 
-                   <Card id={creator.id} name={creator.name} description={creator.description} url={creator.url} imageUrl = {creator.imageUrl}/>
-                ) : <h2>{'No Creators Added Yet 😞'}</h2>
+                    <div className='showRow'>
+                        <Card id={creator.id} name={creator.name} description={creator.description} url={creator.url} imageUrl = {creator.imageUrl}/>
+                    </div>
+                    ) : <h2>{'No Creators Added Yet 😞'}</h2>
             }
         </div>  
     )

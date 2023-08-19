@@ -1,42 +1,135 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.showCreators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-bottom: 5em;
+  margin-top: 5em;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.showRow {
+  display: grid;
+  grid-template-rows: repeat(1, 4fr); /* Two cards in each row */
+  gap: 10em; /* Gap between cards */
+  justify-items: center; /* Center cards within the row */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add your Card styling here */
+
+  
+
+.creatorCard{
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+width: 20em;
+height: 100%;
+background-color: #ffffff;
+transition: box-shadow 0.3s ease;
+margin-bottom: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.creatorCard img{
+  width: 20em;
+  height: 15em;
 }
 
-.card {
-  padding: 2em;
+.creatorCard:hover{
+  box-shadow: 0 3em 3em rgba(14, 134, 46, 0.641);
 }
 
-.read-the-docs {
-  color: #888;
+.editCreator{
+  color: white;
+}
+
+label{
+  color: white;
+}
+
+input{
+  background-color: rgb(44, 122, 44);
+}
+
+.editCreator, .addCreator{
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  width: 30em;
+}
+
+.welcome{
+  min-height: 50vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url("https://media.istockphoto.com/id/532378051/photo/night-sky-with-stars-and-clouds.webp?b=1&s=170667a&w=0&k=20&c=mnItqSY0HShx09QEMPHwDkcP8_1p2yY_efrN38UG3c4=");
+}
+
+.welcome_text{
+  justify-items: center;
+  align-items: center;
+  padding-left: 2em;
+}
+
+:root{
+  background-color: #06273A;
+}
+
+.welcome_second button{
+  background-color: cornflowerblue;
+  padding: 1.5em 2em;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 2em;
+}
+
+.welcome_second button:hover{
+  box-shadow: 0 1em 1em rgba(14, 134, 46, 0.641);
+  background-color: aquamarine;
+
+}
+
+.welcome_second{
+  margin-top: 2em;
+  padding-left: 39%;
+}
+
+/* For view creator */
+.ViewCreator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ccc;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ViewCreator img{
+  height: 25em;
+  width: 45em;
+}
+
+.ViewCreator button{
+  background-color: cornflowerblue;
+  padding: 1em 3em;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 2em;
+}
+
+
+.ViewCreator button:hover{
+  box-shadow: 0 1em 1em rgba(14, 134, 46, 0.641);
+  background-color: aquamarine;
+
+}
+
+.creatorCard button{
+  background-color: darkcyan;
+  padding: 1em 2em;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 2em;
 }

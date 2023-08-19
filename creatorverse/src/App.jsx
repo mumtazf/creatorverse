@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import {useRoutes} from 'react-router-dom'
+import { useParams } from "react-router-dom";
 
 import reactLogo from './assets/react.svg'
 import './App.css'
@@ -10,6 +11,8 @@ import Home from './Components/Home';
 import Nav from './Components/Nav'
 
 import {supabase} from './client'
+import ViewCreator from './Pages/ViewCreator';
+import ViewCreatorWithId from './routes/ViewCreatorWithId';
 
 const App = () => {
 
@@ -27,7 +30,7 @@ const App = () => {
     let element = useRoutes([
       {
         path: "/",
-        element: <Home />
+        element: <Home data = {creator} /> 
       },
       {
         path: "/creators",
@@ -36,6 +39,10 @@ const App = () => {
       {
         path: "/edit/:id",
         element: <EditCreator data = {creator}/>
+      }, 
+      {
+        path: "/view/:id",
+        element: <ViewCreatorWithId data = {creator}/>
       }, 
       {
         path: "/new",
@@ -47,6 +54,7 @@ const App = () => {
       {element}
     </div>
   )
-}
+};
+
 
 export default App;
